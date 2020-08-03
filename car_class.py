@@ -13,6 +13,6 @@ class Spaceship:
         return "This spaceship is called the %s. An %s %s, created in the year %d." % (self.name, self.make, self.model, self.year)
 
 
-Millenium_Falcon = Spaceship("Millenium Falcon", "CEC", "YT-Series", 1300)
+Millenium_Falcon = Spaceship("Millenium Falcon", "Corellian Engineering Corporation", "YT-Series", 1300)
 
 print(Millenium_Falcon)
