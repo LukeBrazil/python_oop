@@ -24,6 +24,9 @@ class Person:
 
     def greet(self, other_person):
         print('Hello %s, I am %s!' % (other_person.name, self.name))
+
+    def contact_info(self, name, email, phone):
+        return "%s's contact info is %s and %s" % (self.name, self.email, self.phone)
     
 
 
@@ -33,5 +36,8 @@ jordan = Person("Jordan", "jordan@aol.com", "495-586-3456")
 sonny.greet(jordan)
 jordan.greet(sonny)
 
-print("Sonny's contact info: " + sonny.email, sonny.phone)
-print("Jordan's contact info: " + jordan.email, jordan.phone)
+# print("Sonny's contact info: " + sonny.email, sonny.phone)
+# print("Jordan's contact info: " + jordan.email, jordan.phone)
+
+print(sonny.contact_info(sonny.name, sonny.email, sonny.phone))
+print(jordan.contact_info(jordan.name, jordan.email, jordan.phone))
